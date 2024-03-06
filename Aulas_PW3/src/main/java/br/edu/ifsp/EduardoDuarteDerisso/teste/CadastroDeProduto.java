@@ -1,5 +1,6 @@
 package br.edu.ifsp.EduardoDuarteDerisso.teste;
 
+import br.edu.ifsp.EduardoDuarteDerisso.dao.CategoriaDao;
 import br.edu.ifsp.EduardoDuarteDerisso.dao.ProdutoDao;
 import br.edu.ifsp.EduardoDuarteDerisso.modelo.Categoria;
 import br.edu.ifsp.EduardoDuarteDerisso.modelo.Produto;
@@ -23,11 +24,14 @@ public class CadastroDeProduto {
 
         EntityManager em = JPAUtil.getEntityManager();
 
-        ProdutoDao dao = new ProdutoDao(em);
+
+        ProdutoDao produtoDao = new ProdutoDao(em);
+        CategoriaDao categoriaDao = new CategoriaDao(em);
 
         em.getTransaction().begin();
 
-        dao.cadastrar(celular);
+        categoriaDao.cadastrar(celulares);
+        produtoDao.cadastrar(celular);
 
         em.getTransaction().commit();
 
