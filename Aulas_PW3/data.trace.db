@@ -1,0 +1,6 @@
+2024-03-12 02:05:09.409881-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORIA PRODUTOS [*]USUARIO"; SQL statement:
+SELECT * FROM CATEGORIA PRODUTOS USUARIO [42000-224]
+2024-03-12 02:05:12.427709-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORIA PRODUTOS [*]USUARIO PRODUTOS"; SQL statement:
+SELECT * FROM CATEGORIA PRODUTOS USUARIO PRODUTOS [42000-224]
